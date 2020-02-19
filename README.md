@@ -8,6 +8,11 @@ Main component Highlighter feature support:
 - highlight text that is overlaped inside of the existing selection   
 - if highlight color isn't selected, it will remove the selected text from the highlighted selections
 
+TODO:
+- add e2e test
+- move to typescript
+- add feature for joining selections with same color
+
 ## Project setup
 
 Run `npm i` or `yarn` to install all dependencies.
