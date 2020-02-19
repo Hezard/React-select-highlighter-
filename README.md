@@ -2,13 +2,15 @@
 This project contains React Select Highlighter.
 Powered with ReactJS, Redux, SASS, Parcel, Jest, React testing library.
 
-Main component Highlighter feature support: 
+[Check Demo](https://hezard.github.io/react-select-highlighter/)
+
+**Main component Highlighter feature support:** 
 - highlight text that is overlaped at the begining of the existing selection   
 - highlight text that is overlaped at the end of the existing selection   
 - highlight text that is overlaped inside of the existing selection   
 - if highlight color isn't selected, it will remove the selected text from the highlighted selections
 
-TODO:
+**TODO:**
 - add e2e test
 - move to typescript
 - add feature for joining selections with same color
