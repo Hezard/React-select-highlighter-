@@ -1,0 +1,30 @@
+@use "/scss/vars" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI',
+    'Helvetica Neue', 'Lucida Grande', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}

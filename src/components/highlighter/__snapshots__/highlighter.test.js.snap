@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlighter test initial render 1`] = `
+<article
+  class="highlighter"
+>
+  Lorem Ipsum 
+  <span
+    class="highlighter__selection highlighter__selection--green"
+  >
+    is simply
+  </span>
+   dummy text 
+  <span
+    class="highlighter__selection highlighter__selection--yellow"
+  >
+    of the printing
+  </span>
+   and 
+  <span
+    class="highlighter__selection highlighter__selection--red"
+  >
+    type
+  </span>
+  
+  <span
+    class="highlighter__selection highlighter__selection--green"
+  >
+    setting industry
+  </span>
+  . Lorem Ipsum has 
+  <span
+    class="highlighter__selection highlighter__selection--red"
+  >
+    been
+  </span>
+   the industry's.
+</article>
+`;

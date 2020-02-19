@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Toggle Group test initial render 1`] = `
+<div
+  class="btn-toggle-group btn-group-test"
+>
+  <button
+    class="btn btn btn-test btn--md btn--primary"
+  >
+    Btn 1
+  </button>
+  <button
+    class="btn btn btn-test btn--md btn--primary"
+  >
+    Btn 2
+  </button>
+</div>
+`;

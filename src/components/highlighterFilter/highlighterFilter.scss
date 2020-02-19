@@ -1,0 +1,13 @@
+@use "/scss/vars" as *;
+
+.highlighter-filter {
+  padding: 1.5rem;
+  border: 1px solid $gray;
+  border-radius: 3px;
+  max-height: 20rem;
+  overflow-y: auto;
+
+  .highlighter__selection {
+    margin-bottom: 0.5rem;
+  }
+}

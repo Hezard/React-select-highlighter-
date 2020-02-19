@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlighter Filter test initial render 1`] = `
+<section
+  class="highlighter-filter filter-test"
+>
+  <div
+    class="highlighter__selection highlighter__selection--green"
+  >
+    dummy text
+  </div>
+  <div
+    class="highlighter__selection highlighter__selection--red"
+  >
+    type and scrambled
+  </div>
+  <div
+    class="highlighter__selection highlighter__selection--green"
+  >
+    unchanged.
+  </div>
+</section>
+`;

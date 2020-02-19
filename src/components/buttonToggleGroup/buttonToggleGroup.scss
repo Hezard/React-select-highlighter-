@@ -1,0 +1,26 @@
+@use 'sass:color';
+@use "/scss/vars" as *;
+
+.btn-toggle-group {
+  display: flex;
+  flex: 1 1 50%;
+
+  .btn {
+    border-color: $primary;
+  }
+
+  .btn--primary {
+    border-color: color.scale($primary, $lightness: -30%);
+  }
+
+  > :not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+
+  > :not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

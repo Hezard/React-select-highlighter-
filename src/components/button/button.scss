@@ -1,0 +1,88 @@
+@use 'sass:color';
+@use "/scss/vars" as *;
+
+.btn {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+
+  font-size: 14px;
+  min-height: 40px;
+  min-width: 100px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.5s ease;
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.65;
+  }
+
+  &--active {
+    &:not(:disabled):not(.btn--secondary) {
+      background-color: color.scale($primary, $lightness: -15%);
+    }
+    &:not(:disabled):not(.btn--primary) {
+      background-color: color.scale($secondary, $lightness: -15%);
+    }
+
+    &:not(:disabled).btn--outline {
+      color: $white;
+    }
+  }
+
+  &--primary {
+    background: $primary;
+    color: $white;
+
+    &:not(:disabled):not(.btn--outline):not(.btn--active):hover {
+      background-color: color.scale($primary, $lightness: -5%);
+    }
+  }
+
+  &--secondary {
+    background: $secondary;
+    color: $white;
+
+    &:not(:disabled):not(.btn--outline):not(.btn--active):hover {
+      background-color: color.scale($secondary, $lightness: -5%);
+    }
+  }
+
+  &--outline {
+    background-color: $white;
+    border-color: currentColor;
+
+    &.btn--primary {
+      color: $primary;
+
+      &:not(:disabled):not(.btn--active):hover {
+        background-color: color.scale($primary, $lightness: 95%);
+        color: color.scale($primary, $lightness: -10%);
+      }
+    }
+
+    &.btn--secondary {
+      color: $secondary;
+
+      &:not(:disabled):not(.btn--active):hover {
+        background-color: color.scale($secondary, $lightness: 95%);
+        color: color.scale($secondary, $lightness: -10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@use "/scss/vars" as *;
+@use "/scss/grid";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    flex: none;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid $gray;
+    background-color: $white;
+    text-align: center;
+  }
+
+  &-content {
+    padding: 2rem;
+    flex: 0 1 auto;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      width: 50rem;
+    }
+  }
+}
+
+.form-textfield {
+  border-radius: 3px;
+  border: 1px solid $gray;
+  padding: 1.5rem;
+  width: 100%;
+  min-height: 12rem;
+
+  resize: vertical;
+}

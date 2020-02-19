@@ -1,0 +1,23 @@
+// main colors
+$blue: #006fc6;
+$green: #76d0a4;
+$red: #d33a2c;
+$yellow: #fedd0e;
+$gray: #e8ebed;
+$gray-darker: #babcbf;
+$dark: #17181a;
+$white: #fff;
+
+$primary: $blue;
+$secondary: $red;
+$text-color: $dark;
+
+$grid-gutter: 1rem;
+
+$sizes: (
+  0: 0,
+  1: 0.5rem,
+  2: 1rem,
+  3: 1.5rem,
+  4: 2rem
+);
